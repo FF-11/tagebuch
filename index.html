@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tagebuch</title>
+  </head>
+  <body>
+    <h1>Tagebuch</h1>
+    <form id="today">
+      <h2>Heutiger Eintrag</h2>
+      <textarea id="todaytext" rows="5"></textarea>
+      <button type="button" id="save">Speichern</button>
+    </form>
+    <div id="entries">
+      <h2>Alle Einträge</h2>
+      <ul id="entrylist">
+      </ul>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <div id="viewer">
+      <button id="viewerclose" type="button" aria-label="Schließen">
+        <img src="media/close.svg">
+      </button>
+      <h1 id="viewertitle"></h1>
+      <div id="viewercontent"></div>
+    </div>
+  </body>
+</html>
